@@ -17,7 +17,7 @@ html, body {
 
 nav {
     width: 100%;
-    height: 30px; /* Further reduce the height for very small screens */
+    height: 60px; /* Increase the height for better visibility on small screens */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ header {
 
 .logo {
     position: absolute;
-    top: 5px; /* Adjust the top position as needed */
+    top: 10px; /* Adjust the top position as needed */
     left: 20px;
 }
 
@@ -92,7 +92,7 @@ header {
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     nav {
-        height: 20px; /* Further reduce the height for very small screens */
+        height: 40px; /* Increase the height for better visibility on small screens */
         padding: 0 10px; /* Adjust the padding for smaller screens */
     }
 
