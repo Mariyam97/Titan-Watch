@@ -12,36 +12,60 @@ html, body {
     color: #333;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
 }
 
 nav {
-    width: 100%;
-    height: 60px; /* Increase the height for better visibility on small screens */
+    width: 90%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adjust the padding as needed */
+    padding: 0 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Add background color with transparency */
+    z-index: 1000; /* Ensure navigation stays above other content */
+}
+
+.nav-menu {
+    list-style: none;
+    margin-right: 20%;
+    text-align: right;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #f06c64; /* Change the color on hover */
 }
 
 /* Header styles */
 header {
-    background-image: url('bg.jpeg');
+    background-image: url('bg.jpeg'); /* Replace 'bg.jpeg' with your actual background image URL */
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 40px 0; /* Increase the padding for better visibility on smaller screens */
+    padding: 100px 0;
 }
 
 .logo {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    left: 20px;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
 }
 
 .logo img {
@@ -51,8 +75,8 @@ header {
 .left h1 {
     font-size: 30px;
     font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px red, 0 0 10px red, 0 0 20px white, 0 0 20px white, 0 0 30px black, 0 0 30px black;
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+    text-shadow: 0 0 10px red, 0 0 10px red, 0 0 20px white, 0 0 20px white, 0 0 30px black, 0 0 30px black; /* Mix of red, white, and black text shadow */
 }
 
 /* Button styles */
@@ -76,7 +100,7 @@ header {
 /* Icon section styles */
 .icon {
     text-align: center;
-    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-top: 30px;
 }
 
 .icon img {
@@ -92,16 +116,22 @@ header {
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     nav {
-        height: 40px; /* Increase the height for better visibility on small screens */
-        padding: 0 10px; /* Adjust the padding for smaller screens */
+        padding: 0 20px;
     }
 
-    header {
-        padding: 20px 0; /* Increase the padding for better visibility on smaller screens */
+    .nav-menu {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+        float: none;
     }
 
     .left h1 {
         font-size: 36px;
-        margin-top: 20px; /* Adjust the top margin for smaller screens */
+        margin-top: 100px; /* Adjust the top margin for smaller screens */
     }
 }
